@@ -54,7 +54,7 @@
                 <Label Text="ESCOLHA UMA SUÍTE"/>
                 <Picker x:Name="picker" Title="Selecione sua Acomodação"/>
 
-                <Frame Margin="10 0 10 0" CornerRadius="15">
+                <Frame CornerRadius="15" Margin="10">
                     <VerticalStackLayout>
                         <Label Text="Perído de Estadia"/>
 
