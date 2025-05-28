@@ -1,3 +1,5 @@
+using System.Threading.Tasks;
+
 namespace MauiAppHotel.Views;
 
 public partial class ContratacaoHospedagem : ContentPage
@@ -5,11 +7,17 @@ public partial class ContratacaoHospedagem : ContentPage
     public ContratacaoHospedagem()
     {
         InitializeComponent();
+    }
 
-        datePickerCheckIn.Date = DateTime.Today;
-        datePickerCheckOut.MinimumDate = DateTime.Today.AddDays(1);
-        datePickerCheckIn.MinimumDate = DateTime.Today;
-
-        
+    private void Button_Clicked(object sender, EventArgs e)
+    {
+        try
+        {
+            Navigation.PushAsync(new HospedagemContratada());
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "OK");
+        }
     }
 }

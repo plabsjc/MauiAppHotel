@@ -71,7 +71,7 @@
                     </VerticalStackLayout>
                 </Frame>
                 
-                <Button Text="Avançar" CornerRadius="15"/>
+                <Button Text="Avançar" CornerRadius="15" Clicked="Button_Clicked"/>
                     
                 
                 
