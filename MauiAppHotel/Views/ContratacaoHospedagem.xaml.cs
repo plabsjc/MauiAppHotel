@@ -34,13 +34,14 @@ public partial class ContratacaoHospedagem : ContentPage
     {
         try
         {
-            if((Quarto)pickerQuarto.SelectedItem == null)
-            {
-                await DisplayAlert("Ops!!!", "Selecione o tipo de Suíte!", "Ok");
-            }
-            else if (stepperAdultos.Value == 0)
+            
+            if (stepperAdultos.Value == 0)
             {
                 await DisplayAlert("Ops!!!", "Selecione ao menos uma pessoa adulta!", "OK");
+            }
+            else if ((Quarto)pickerQuarto.SelectedItem == null)
+            {
+                await DisplayAlert("Ops!!!", "Selecione o tipo de Suíte!", "Ok");
             }
             else if (datePickerCheckOut.Date <= datePickerCheckIn.Date)
             {

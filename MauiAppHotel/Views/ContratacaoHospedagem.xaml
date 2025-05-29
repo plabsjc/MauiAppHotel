@@ -21,10 +21,10 @@
 
 
                     <Label Grid.Row="0" Grid.Column="0"
-                           Text="Adultos"/>
+                           Text="Adultos" HorizontalOptions="Center"/>
                     
                     <Label Grid.Row="1" Grid.Column="0"
-                           Text="Crianças"/>
+                           Text="Crianças" HorizontalOptions="Center"/>
                     
                     <Label Grid.Row="0" Grid.Column="1"
                            Text="{Binding Value}"

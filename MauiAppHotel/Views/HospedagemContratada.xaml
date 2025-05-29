@@ -13,7 +13,7 @@
                FontSize="45"
                HorizontalTextAlignment="Center"/>
         
-        <Frame Margin="10">
+        <Frame Margin="10" HorizontalOptions="Center">
             <HorizontalStackLayout HorizontalOptions="Center">
                 <HorizontalStackLayout Margin="10,0,10,0">
                     <Label Text="Adultos:"/>
@@ -31,25 +31,25 @@
             
             <Grid RowDefinitions="Auto, Auto"
                   ColumnDefinitions="*,*,*">
-                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:"/>
-                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:"/>
-                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:"/>
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" HorizontalOptions="Center"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" HorizontalOptions="Center"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" HorizontalOptions="Center"/>
 
-                <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckIn , StringFormat='{0:dd/MM/yyyy}'}"/>
-                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut , StringFormat='{0:dd/MM/yyyy}'}"/>
-                <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}"/>
+                <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckIn , StringFormat='{0:dd/MM/yyyy}'}" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut , StringFormat='{0:dd/MM/yyyy}'}" HorizontalOptions="Center"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}" HorizontalOptions="Center"/>
 
             </Grid>
             
         </Frame>
 
-        <Frame Margin="10">
+        <Frame Margin="10" HorizontalOptions="Center">
             <HorizontalStackLayout HorizontalOptions="Center">
                 <HorizontalStackLayout>
-                    <Label Text="Valor Total:" Margin="10,0,10,0"/>
-                </HorizontalStackLayout>
+                    <Label Text="Valor Total:" Padding="0,0,5,0"/>
+                <!--</HorizontalStackLayout>
 
-                <HorizontalStackLayout>
+                <HorizontalStackLayout>-->
                     <Label Text="{Binding ValorTotal , StringFormat='{0:c}'}"  TextColor="{StaticResource Primary}"/>
                 </HorizontalStackLayout>
             </HorizontalStackLayout>    
