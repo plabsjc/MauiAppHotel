@@ -12,6 +12,7 @@
             FontSize="45"
             TextColor="{StaticResource Primary}"
             FontFamily="JosefinSans"
+            HorizontalTextAlignment="Center"
             />
         <Frame CornerRadius="30" HasShadow="True" Padding="0">
             
@@ -21,18 +22,18 @@
 
 
                     <Label Grid.Row="0" Grid.Column="0"
-                           Text="Adultos" HorizontalOptions="Center"/>
+                           Text="Adultos" HorizontalOptions="End" VerticalOptions="Center"/>
                     
                     <Label Grid.Row="1" Grid.Column="0"
-                           Text="Crianças" HorizontalOptions="Center"/>
-                    
+                           Text="Crianças" HorizontalOptions="End" VerticalOptions="Center"/>
+
                     <Label Grid.Row="0" Grid.Column="1"
                            Text="{Binding Value}"
-                           BindingContext="{x:Reference stepperAdultos}"/>
+                           BindingContext="{x:Reference stepperAdultos}" VerticalOptions="Center" HorizontalOptions="Center"/>
                     
                     <Label Grid.Row="1" Grid.Column="1"
                            Text="{Binding Value}"
-                           BindingContext="{x:Reference stepperCriancas}"/>
+                           BindingContext="{x:Reference stepperCriancas}" VerticalOptions="Center" HorizontalOptions="Center"/>
                     
                     <Stepper x:Name="stepperAdultos"
                              Grid.Row="0" 
