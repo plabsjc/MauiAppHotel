@@ -52,26 +52,27 @@
                 </Grid>
 
                 <Label Text="ESCOLHA UMA SUÍTE"/>
-                <Picker x:Name="picker" Title="Selecione sua Acomodação"/>
+                <Picker x:Name="pickerQuarto" Title="Selecione sua Acomodação" ItemDisplayBinding="{Binding Descricao}"/>
 
                 <Frame CornerRadius="15" Margin="10">
                     <VerticalStackLayout>
-                        <Label Text="Perído de Estadia"/>
+                        <Label Text="Período de Estadia"/>
 
                         <HorizontalStackLayout> <!--Checkin-->
-                            <Label Text="Check-in"/>
-                            <DatePicker x:Name="datePickerCheckIn" Format="dd/MM/yyyy"/>
+                            <Label Text="Check-in" Padding="0,10,0,0"/>
+                            <DatePicker x:Name="datePickerCheckIn" Format="dd/MM/yyyy"
+                                       DateSelected="datePickerCheckIn_DateSelected" />
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout> <!--Checkout-->
-                            <Label Text="Check-out"/>
+                            <Label Text="Check-out" Padding="0,10,0,0"/>
                             <DatePicker x:Name="datePickerCheckOut" Format="dd/MM/yyyy"/>
                         </HorizontalStackLayout>
                         
                     </VerticalStackLayout>
                 </Frame>
                 
-                <Button Text="Avançar" CornerRadius="15" Clicked="Button_Clicked"/>
+                <Button Text="Avançar" CornerRadius="15" Clicked="Button_Clicked" HorizontalOptions="Center"/>
                     
                 
                 
